@@ -57,5 +57,9 @@ tidy<-data.table(data)
 #tidy<-tidy[, sapply(.SD, function(x) list(mean=mean(x), sd=sd(x))), by= c("id","activity")]
 tidy<-tidy[, sapply(.SD, function(x) list(mean=mean(x))), by= c("id","activity")]
 setorder(tidy,id)
+<<<<<<< HEAD
+=======
+
+>>>>>>> d382fabe7478393f56513a20c27cf2d3c30eaae0
 
 
