@@ -56,5 +56,6 @@ tidy<-data.table(data)
 #Just in case want tapply more than a function.
 #tidy<-tidy[, sapply(.SD, function(x) list(mean=mean(x), sd=sd(x))), by= c("id","activity")]
 tidy<-tidy[, sapply(.SD, function(x) list(mean=mean(x))), by= c("id","activity")]
+setorder(tidy,id)
 
 
